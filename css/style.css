@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+           /* 1 */
+.secton{
+    width:100%;
+    height: 450px;
+    background-color: #6592CF;
+}
+.emoji{
+    content: "";
+    width: 170px;
+    height: 170px;
+    border: 40px solid #060F55;
+    position: absolute;
+    border-radius: 50%;
+    top: 230px;
+    left: 650px;
+}
+.secton::before{
+    content: "";
+    width: 100px;
+    height: 100px;   
+    border: 40px solid #060F55;
+    position: absolute;
+    border-radius: 50%;
+    top: 40px;  
+    left: 50%;
+}
+.secton::after{
+    content: "";
+    width: 100px;
+    height: 100px;   
+    border: 40px solid #060F55;
+    position: absolute;
+    left: 500px;
+    top: 40px;
+    border-radius: 50%;
+}
+.box{
+    content: "";
+    position: relative;
+    width: 650px;
+    height: 200px;background: #6592CF;
+    z-index: 1;
+    bottom: 145px;
+    right: 350px;
+}
+                /* 2 */
+
+.card{
+    background: #998235;
+    margin-top: 50px;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+} 
+.card::after{
+    width: 20px;
+    height: 90px;
+    background: #191919;
+    position: absolute;
+    content: "";
+    margin-left: 230px;
+    margin-top: 60px;
+}
+.card::before{
+    width: 15px;
+    height: 15px;
+    background: #191919;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    margin-left: 270px;
+    margin-top: 170px;
+    border-radius: 50%;
+}               
+.card__box{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 90px;
+    background: #EFF33C;
+    margin-left: 150px;
+    margin-top: 150px;
+    border-radius: 150px;
+    overflow: hidden;
+}
+.card__box::before{
+    width: 100px;
+    height: 100px;
+    content: "";
+    z-index: 1;
+    border: none;
+    position: absolute;
+    right: 130px;
+    margin-left: 0px;
+    background: #191919;
+}
+.card__box::after{
+    width: 20px;
+    height: 90px;
+    background: #191919;
+    position: absolute;
+    content: "";
+    margin-left: 45px;
+}
+.card__wing{
+    position: relative;
+    z-index: 1;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    top: 60px;
+    left: 140px;
+    border-radius: 50%;
+}
+.card__wing::before{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: #fff;
+    left: 85px;
+    border-radius: 60%;
+}
+.card__wing::after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100px;
+    height: 50px;
+    background: #fff;
+    left: 35px;
+    bottom: 0px;
+}
+                        /* 3 */
+.rectangle{
+    width:100%;
+    height: 550px;
+    background: #6592CF;
+    margin-bottom: 100px;
+    position: relative;
+    margin: 0 auto;
+}
+.ractanle__box{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: #243D83;
+    left: 30%;
+    top: 70px;
+    transform: rotate(-1deg);
+}
+.ractanle__box::before{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: #6592CF;
+    transform: rotate(20deg);
+    left: 70px;
+    top: 70px;
+}
+.ractanle__box::after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    background: #243D83;
+    transform: rotate(40deg);
+    left: 115px;
+    top: 120px;
+}
+                /* 4 */
+.topic{
+    width: 100%;
+    height: 450px;
+    background: #E38F66;
+    position: relative;
+    margin-bottom: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.topic::before{
+    width: 400px;
+    height: 400px;
+    background: #E38F66;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 210px;
+    left: 70px;
+}
+.topic__title{
+    position: absolute ;
+    content: "";
+    width: 180px;
+    height: 400px;
+    background: #FFFBDA;
+    left: 150px;
+    top: 70px;
+    border-radius: 180px;
+    overflow: hidden;
+}
+.topic__title::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #FFFBDA;
+    z-index: 1;
+    top: 170px;
+    left: 45px;
+    border-radius: 50%;
+}
+.topic__title::after{
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    top: 165px;
+    left: 100px;
+    border-radius: 50%;
+    border: 10px solid #FFFBDA;
+}
+.topic__text{
+    position: absolute;
+    content: "";
+    width: 260px;
+    height: 25px;
+    background-color: #FFFBDAed;
+    top: 200px;
+    left: 110px;
+    border-radius: 180px;
+    z-index: 2;
+}
+.topic__text::before{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: #FFFBDAed;
+    width: 60px;
+    height: 60px;
+    top: 90px;
+    left: 60px;
+    border-radius: 200px 200px 200px 0;
+    transform: rotate(30deg);
+}
+.topic__text::after{
+    position: absolute;
+    content: "";
+    z-index: 1;
+    background: #FFFBDAed;
+    width: 60px;
+    height: 60px;
+    top: 90px;
+    left: 130px;
+    border-radius: 200px 200px 200px 0;
+    transform: rotate(-120deg);
+}
+                /* 5 */
+.form{
+    width:100%;
+    height: 500px;
+    background: #393E46;
+    margin-bottom: 100px;
+    position: relative;
+    margin: 0 auto;
+}              
+.forim__box{
+    position: relative;
+    content: "";
+    width: 750px;
+    height: 250px;
+    background: #4CAAB3;
+    left: 30%;
+    top: 20%;
+}
+.forim__card{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background-color: #393E46;
+    left: 45%;
+    top: 15%;   
+    transform: rotate(45deg);
+}
+.forim__card::before{
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 30px;
+    width: 230px;
+    height: 230px;
+    background: #4CAAB3;
+}
+.forim__card::after{
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: 120px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #393E46;
+}
+           /* 6 */
+.frog{
+    width: 100%;
+    height: 400px;
+    background: #293462;
+    position: relative;
+} 
+.frog::before{
+    width: 15px;
+    height: 15px;
+    background: #293462;
+    position: absolute;
+    content: "";
+    z-index: 2;
+    left: 793px;
+    top: 24%;
+    border-radius: 50%;
+}         
+.frog__box{
+    width: 180px;
+    height: 110px;
+    background: #FE5F55;
+    position: absolute;
+    content: "";
+    z-index: 1;
+    left: 50%;
+    top: 100px;
+    border-radius: 130px;
+    overflow: hidden;
+}
+.frog__box::before{
+    width: 180px;
+    height: 100px;
+    background: #A64942;
+    position: absolute;
+    z-index: 2;
+    content: "";
+    top: 60px;
+}
+.frog__box::after{
+    width: 10px;
+    height: 10px;
+    background: #293462;
+    position: absolute;
+    content: "";
+    left: 70px;
+    top: 40px;
+    border-radius: 50%;
+}
+.frog__card::before{
+    width: 10px;
+    height: 10px;
+    background: #293462;
+    position: absolute;
+    z-index: 1;
+    content: "";
+    left: 85px;
+    bottom: -20px;
+    border-radius: 50%;
+}
+.frog__card{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    background: #FE5F55;
+    z-index: 1;
+    border-radius: 50%;
+    left: 51%;
+    top: 20%;
+}
+.frog__card::after{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    content: "";
+    background: #FE5F55;
+    z-index: 1;
+    border-radius: 50%;
+    left: 98px;
+
+}
+.frog__title{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #FFF1C1;
+    left: 785px;
+    top: 22%;
+    z-index: 1;
+    border-radius: 50%;
+}
+.frog__title::after{
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #FFF1C1;
+    left: 100px;
+    z-index: 1;
+    border-radius: 50%;
+}
+.frog__title::before{
+    width: 15px;
+    height: 15px;
+    background: #293462;
+    position: absolute;
+    content: "";
+    left: 109px;
+    z-index: 2;
+    top: 8px;
+    border-radius: 50%;
+}
+                /* 7 */
+.forms{
+    width: 100%;
+    height: 400px;
+    background: #6592CF;
+    position: relative;
+} 
+.forms__card{
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 200px;
+    background: #243D83;
+    left: 40%;
+    top:120px;
+}
+.forms__card::before{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: #EFF33C;
+    z-index: 3;
+    left: 205px;
+    top: 40px;
+    border-radius: 50%;
+}
+.forms__box::after{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 300px;
+    background: #6592CF;
+    left: 710px;
+    top: 60px;
+    border-radius: 50%;
+}
+.forms__box::before{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    background: #243D83;
+    z-index: 1;
+    left: 760px;
+    top: 110px;
+    border-radius: 50%;
+}
+                   /* 8 */
+.role{
+    width: 100%;
+    height: 400px;
+    background: #1038BF;
+    position: relative;
+}
+.role::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 66px; 
+    z-index: 3;
+    background: #1038BF;
+    left: 46%;
+    top: 55px;
+    border-radius: 180px;
+}
+.role__card{
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 35px solid #4F77FF;
+    left: 40%;
+    top: 20%;
+    border-radius: 50%;
+}
+.role__box{
+    position: absolute;
+    content: "";
+    width: 199px;
+    height: 20px; 
+    z-index: 1;
+    background: #4F77FF;
+    left: 40%;
+    top: 45%;
+    border-radius: 180px;
+}
+.role__box::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 66px; 
+    z-index: 1;
+    background: #4F77FF;
+    left: 43%;
+    top: 45%;
+    border-radius: 180px;
+}
+.role__box::after{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px; 
+    z-index: 1;
+    background: #1038BF;
+    left: 43%;
+    top: 5px;
+    border-radius: 50%;
+}
